@@ -12,10 +12,19 @@ public class EntryResourceTest {
     @Test
     public void testIndexEndpoint() {
         given()
-          .when().get("/entries")
-          .then()
-             .statusCode(200)
-             .body(is("[]"));
+                .when().get("/entries")
+                .then()
+                .statusCode(200)
+                .body(is("[]"));
+    }
+
+    @Test
+    public void testDeleteEndpoint() {
+        given()
+                .when().get("/entries")
+                .then()
+                .statusCode(200)
+                .body(is("[]"));
     }
 
 }
